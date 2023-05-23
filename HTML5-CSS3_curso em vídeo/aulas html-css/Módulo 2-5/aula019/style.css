@@ -12,7 +12,8 @@ body {
 
 h1#principal {
     text-align: center;
-    color: rgb(243, 8, 8);
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 174, 0);
 }
 
 h1 {
