@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 /*
-  em HTML é id    = em CSS é #
-  em HTML é class = em CSS é .
+  em HTML é id(único)    = em CSS é #
+  em HTML é class(multiplos) = em CSS é .
 */
 
 body {
@@ -18,10 +18,27 @@ h1#principal {
 
 h1 {
     color: rgb(0, 83, 56);
+    background-color: rgba(0, 83, 55, 0.295);
+    text-align: center;
 }
 
 h2 {
     color: rgb(231, 124, 2);
+}
+
+.basico {
+    color: rgb(33, 180, 33);
+    font-weight: bold;
+}
+
+.intermediario {
+    color: rgb(202, 184, 24);
+    font-weight: bold;
+}
+
+.avancado {
+    color: rgb(182, 49, 49);
+    font-weight: bold;
 }
 
 p {
