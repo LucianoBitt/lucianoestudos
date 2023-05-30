@@ -17,11 +17,25 @@
             background-color: rgba(67, 161, 204, 0.651);
             padding: 10px;
             margin: 10px;
+            border-radius: 8px;
+        }
+        
+        h1 {
+            box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.349);
+            border-radius: 5px;
+        }
+        
+        h2 {
+            background-color: rgba(67, 161, 204, 0.651);
+            border-radius: 5px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
         }
         
         nav {
             background-color: rgb(102, 102, 102);
             padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+            border-radius: 5px;
         }
         
         nav>a {
@@ -38,26 +52,38 @@
         
         main {
             background-color: white;
-            padding: 10px;
+            padding: 5px 10px;
             margin: 10px;
+            border-radius: 10px 0px;
         }
         
         article {
             background-color: lightgray;
             padding: 5px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.336);
+            border-radius: 10px 0px;
+            margin: 10px 0px;
         }
         
         article>aside {
             font-weight: bold;
             background-color: rgb(165, 165, 165);
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.349);
+            border-radius: 5px;
+            margin: 5px;
+            text-align: right;
         }
         
         footer {
-            font-size: 0.6em;
+            font-size: 1em;
             background-color: black;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.411);
             color: white;
             text-align: center;
-            padding: 1px;
+            padding: 3px;
+        }
+        
+        footer>p {
             margin: 0px;
         }
     </style>
@@ -76,7 +102,13 @@
     </header>
     <main>
         <section id="assuntos">
-
+            <article>
+                <h2>Tecnologia, Esporte e Lazer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia doloremque fugiat ut optio id beatae autem ratione, repellendus recusandae suscipit, aliquam nesciunt. At reprehenderit voluptate voluptates autem rerum, ullam eveniet!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia doloremque fugiat ut optio id beatae autem ratione, repellendus recusandae suscipit, aliquam nesciunt. At reprehenderit voluptate voluptates autem rerum, ullam eveniet!</p>
+                <aside>
+                    <p>Artigo escrito por Estefania Damascena</p>
+                </aside>
         </section>
         <section id="noticias">
             <article>
@@ -87,14 +119,10 @@
                     <p>Artigo escrito por Luciano Bittencourt</p>
                 </aside>
             </article>
-            <article>
-
-            </article>
         </section>
-
     </main>
     <footer>
-        <h1>Desenvolvido por Luciano Bittencourt</h1>
+        <p>Desenvolvido por Luciano Bittencourt</p>
     </footer>
 </body>
 
