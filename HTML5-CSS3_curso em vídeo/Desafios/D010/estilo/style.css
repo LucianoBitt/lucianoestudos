@@ -19,8 +19,8 @@
 }
 
 * {
-    margin: 2px;
-    padding: 1px;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -47,6 +47,11 @@ nav {
 
 main {
     background-color: white;
+    margin: auto;
+}
+
+img {
+    width: 100%;
 }
 
 main h1 {
