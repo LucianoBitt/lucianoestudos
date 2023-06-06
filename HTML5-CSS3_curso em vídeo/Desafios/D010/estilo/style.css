@@ -40,10 +40,6 @@ nav {
     background-color: var(--cor2);
 }
 
-nav>hover {
-    color: white;
-}
-
 main {
     background-color: white;
 }
