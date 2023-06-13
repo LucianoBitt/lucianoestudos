@@ -30,6 +30,7 @@ body {
 
 p {
     margin: 15px 0px;
+    text-align: justify;
 }
 
 header {
@@ -39,7 +40,7 @@ header {
     padding-top: 30px;
 }
 
-header>h1 {
+header h1 {
     color: white;
     font-family: var(--fonte-destaque);
     font-size: 3em;
@@ -47,7 +48,7 @@ header>h1 {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
 
-header>p {
+header p {
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
     color: white;
@@ -68,14 +69,14 @@ nav {
     text-align: left;
 }
 
-nav>a {
+nav a {
     color: white;
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav>a:hover {
+nav a:hover {
     background-color: var(--cor3);
     color: var(--cor5);
     border-top-left-radius: 5px;
@@ -87,29 +88,53 @@ main {
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
-    margin-bottom: 30px;
     padding: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    text-indent: 30px;
 }
 
 main h1 {
     color: var(--cor5);
     font-family: var(--fonte-android);
-    margin: auto;
+    text-indent: 8px;
 }
 
 main h2 {
-    color: var(--cor5);
+    color: var(--cor4);
     font-family: var(--fonte-android);
-    margin: auto;
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 8px;
 }
 
-main>p {
-    margin: auto;
+main p {
+    margin: 15px 0px;
     text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
 }
 
 main img {
@@ -128,52 +153,58 @@ main iframe {
     margin: auto;
 }
 
-footer {
-    margin: auto;
-    font-size: 1em;
-    background-color: var(--cor3);
-    color: white;
-    text-align: center;
-}
-
 aside {
     padding: 15px 0px;
 }
 
-aside>h3 {
-    color: var(--cor5);
+aside h3 {
+    color: var(--cor4);
     font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 8px;
 }
 
-aside>p {
+aside p {
     text-align: justify;
+    text-indent: 30px;
 }
 
-aside>ul {
-    padding: 18px;
+aside ul {
+    margin: 30px;
+    text-indent: 5px;
 }
 
-ul>li {
-    padding: 3px;
+ul li {
+    padding: 2px;
+    margin: 5px;
     font-weight: bold;
 }
 
-li>abbr {
-    padding: 3px;
+li abbr {
+    padding: 2px 6px;
     color: black;
     font-weight: normal;
 }
 
-li>abbr:hover {
-    background-color: var(--cor1);
+li abbr:hover {
+    background-color: var(--cor2);
     color: var(--cor5);
     font-weight: normal;
     border-radius: 5px;
     transition-duration: .5s;
 }
 
-footer>p {
+footer {
+    background-color: var(--cor3);
     color: white;
+    padding: 5px;
+    margin: 2px;
+    font-size: 1em;
+}
+
+footer p {
+    color: white;
+    text-align: center;
     text-decoration: none;
     font-weight: bold;
 }
