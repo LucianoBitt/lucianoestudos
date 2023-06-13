@@ -112,6 +112,14 @@ main img.pequena {
     margin: auto;
 }
 
+main iframe {
+    max-width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    margin: auto;
+}
+
 footer {
     background-color: var(--cor5);
     color: white;
