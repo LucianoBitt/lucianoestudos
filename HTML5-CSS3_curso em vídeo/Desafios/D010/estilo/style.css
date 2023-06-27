@@ -28,6 +28,10 @@ body {
     font-family: var(--fonte-padrao);
 }
 
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
 p {
     margin: 15px 0px;
     text-align: justify;
@@ -44,6 +48,8 @@ header h1 {
     color: white;
     font-family: var(--fonte-destaque);
     font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
     text-align: center;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
@@ -56,8 +62,9 @@ header p {
     padding-right: 10px;
     padding-left: 10px;
     margin: auto;
-    text-align: center;
+    margin-bottom: 30px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    text-align: center;
 }
 
 nav {
@@ -70,7 +77,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--cor1);
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -99,6 +106,8 @@ main {
 main h1 {
     color: var(--cor5);
     font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
     text-indent: 8px;
 }
 
@@ -106,6 +115,7 @@ main h2 {
     color: var(--cor4);
     font-family: var(--fonte-android);
     font-size: 1.3em;
+    font-weight: normal;
     background-image: linear-gradient(to right, var(--cor2), transparent);
     text-indent: 8px;
 }
@@ -147,31 +157,42 @@ main img.pequena {
     margin: auto;
 }
 
-main iframe {
-    max-width: 80%;
-    display: block;
-    margin: auto;
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 aside {
-    padding: 15px 0px;
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
 }
 
 aside h3 {
-    color: var(--cor4);
-    font-family: var(--fonte-android);
-    background-image: linear-gradient(to right, var(--cor2), transparent);
+    color: white;
+    background-color: var(--cor4);
     text-indent: 8px;
-}
-
-aside p {
-    text-align: justify;
-    text-indent: 30px;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 aside ul {
-    margin: 30px;
-    text-indent: 5px;
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
 }
 
 ul li {
@@ -197,9 +218,9 @@ li abbr:hover {
 footer {
     background-color: var(--cor3);
     color: white;
-    padding: 5px;
-    margin: 2px;
-    font-size: 1em;
+    text-align: center;
+    padding: 1px;
+    font-size: 0.8em;
 }
 
 footer p {
@@ -210,9 +231,11 @@ footer p {
 }
 
 footer a.git:hover {
-    color: red;
+    text-decoration: underline;
+    color: var(--cor1);
 }
 
 footer a.cev:hover {
-    color: red;
+    text-decoration: underline;
+    color: var(--cor1);
 }
